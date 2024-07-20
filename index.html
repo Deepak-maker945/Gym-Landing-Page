@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:wght@400;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="sticky-header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="gym_logo.png" alt="Gym Logo">
+            </div>
+            <ul class="show_navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#programs">Program</a></li>
+                <li><a href="#price_section">Pricing</a></li>
+                <li><a href="#plan_section">Choose Us</a></li>
+                <li><a href="#contact_page_section">Contact Us</a></li>
+                <li class="toggle_bar" onclick="functional_lineBar()"><i class="fa-solid fa-bars"></i></li>
+            </ul>
+            <button class="navbar_btn">Register</button>
+            
+            <div class="drop_down_menu">
+                
+                <ul class="hide_navbar">
+                    <li class="toggle_bar_cross" onclick="functional_cross()"><a><i class="fa-solid fa-xmark"></i></a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#programs">Program</a></li>
+                    <li><a href="#price_section">Pricing</a></li>
+                    <li><a href="#plan_section">Choose Us</a></li>
+                    <li><a href="#contact_page_section">Contact Us</a></li>
+                </ul>
+                <!-- <button class="navbar_btn">Register</button> -->
+
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="left-container">
+                <h5>BEST GYM IN THIS TOWN</h5>
+                <h2><span>Make</span> Your</h2>
+                <h1>Body Shape</h1>
+                <p>Transform Your Life with the Ultimate Fitness Experience</p>
+                <p>Join our community and achieve your fitness goals with state-of-the-art equipment, expert trainers,
+                    and personalized programs.</p>
+                <button class="btn">Get Started Now</button>
+            </div>
+            <div class="right-container">
+                <img src="home-img.png" alt="Home Image">
+            </div>
+        </section>
+
+        <section id="programs">
+            <div class="program-headings">
+                <h2>Our Programs</h2>
+                <h1><span>BUILD YOUR</span> BEST BODY</h1>
+            </div>
+            <div class="program-box">
+                <div class="box1">
+                    <img src="Program Image/program1.png" alt="">
+                    <h3>Flex Muscle</h3>
+                    <p>Creating tension that's temporarily making the muscle fibers smaller or contracted.</p>
+                    <button class="btn">Join Now</button>
+                </div>
+                <div class="box1">
+                    <img src="Program Image/program2.png" alt="">
+                    <h3>Basic Yoga</h3>
+                    <p>Diaphragmatic this is the most common breathing technique you'll find in yoga.</p>
+                    <button class="btn">Join Now</button>
+                </div>
+                <div class="box1">
+                    <img src="Program Image/program3.png" alt="">
+                    <h3>Cardio Exercise</h3>
+                    <p>Exercise your heart rate up and keeps it up for a prolonged period of time.</p>
+                    <button class="btn">Join Now</button>
+                </div>
+                <div class="box1">
+                    <img src="Program Image/program4.png" alt="">
+                    <h3>Weight Lifting</h3>
+                    <p>Attempts a maximum weight single lift of a barbell loaded with weight plates.</p>
+                    <button class="btn">Join Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="price_section">
+            <h1 class="h-pricing">Our Pricing</h1>
+            <div class="pricing">
+                <div class="pricing-box">
+                    <img src="basic.png" alt="">
+                    <h3>Basic Package</h3>
+                    <hr>
+                    <div class="price_para">
+                        <p><i class="fa-solid fa-circle-check tick" style="color: #394338;"></i>₹500/Month</p>
+                        <p><i class="fa-solid fa-circle-check tick" style="color: #394338;"></i>No Personal Trainer</p>
+                        <p><i class="fa-solid fa-circle-check tick" style="color: #394338;"></i>Help center access</p>
+                        <p><i class="fa-solid fa-circle-check tick" style="color: #394338;"></i>Email Support</p>
+                    </div>
+                    <button class="btn">Buy Plan</button>
+                </div>
+                <div class="pricing-box">
+                    <img src="diamond.png" alt="">
+                    <h3>Diamond Package</h3>
+                    <hr>
+                    <div class="price_para">
+                        <p><i class="fa-solid fa-circle-check tick" style="color: #394338;"></i>₹1000/Month</p>
+                        <p><i class="fa-solid fa-circle-check tick" style="color: #394338;"></i>1 Week Personal Trainer
+                        </p>
+                        <p><i class="fa-solid fa-circle-check tick" style="color: #394338;"></i>Help center access</p>
+                        <p><i class="fa-solid fa-circle-check tick" style="color: #394338;"></i>Email Support</p>
+                    </div>
+                    <button class="btn">Buy Plan</button>
+                </div>
+                <div class="pricing-box">
+                    <img src="premium.png" alt="">
+                    <h3>Premium Package</h3>
+                    <hr>
+                    <div class="price_para">
+                        <p><i class="fa-solid fa-circle-check tick" style="color: #394338;"></i>₹1500/Month</p>
+                        <p><i class="fa-solid fa-circle-check tick" style="color: #394338;"></i>Full time Personal
+                            Trainer</p>
+                        <p><i class="fa-solid fa-circle-check tick" style="color: #394338;"></i>Help center access</p>
+                        <p><i class="fa-solid fa-circle-check tick" style="color: #394338;"></i>Email Support</p>
+                        <p><i class="fa-solid fa-circle-check tick" style="color: #394338;"></i>ELITE Gyms & Classes</p>
+                        <p><i class="fa-solid fa-circle-check tick" style="color: #394338;"></i>Workout Classes</p>
+                    </div>
+                    <button class="btn">Buy Plan</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="plan_section">
+            <div class="plans">
+                <h1>Compare Plans</h1>
+                <div class="plan-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Basic</th>
+                                <th>Premium</th>
+                                <th>Diamond</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <th>Public</th>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <th>Private</th>
+                                <td>-</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <th>Permissions</th>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <th>Extra security</th>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <th>Permissions</th>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog_sectoion">
+            <div class="blog">
+                <h1>Our Blogs</h1>
+                <div class="blog_section">
+                    <div class="blog-box">
+                        <img src="abs.jpg" alt="Make Abs">
+                        <h3>How to make abs?</h3>
+                        <p>To get well-defined abs, combine core exercises and cardio to reduce body fat. Follow a
+                            balanced diet, healthy fats, and complex carbs while maintaining acaloric deficit.
+                            Consistency, good sleep are essential for revealing your abs. Stay patient and dedicated for
+                            best results.</p>
+                    </div>
+                    <div class="blog-box">
+                        <img src="belly_fat.png" alt="Lose Belly Fat">
+                        <h3>How to lose belly fat?</h3>
+                        <p>To lose belly fat, combine regular cardio and strength training with a balanced diet, staying
+                            in a caloric deficit. Prioritize hydration, adequate sleep, and stress management to support
+                            fat loss. Consistency is key.</p>
+                    </div>
+                    <div class="blog-box">
+                        <img src="loss_weight.png" alt="Loss Weight">
+                        <h3>How to loss weight?</h3>
+                        <p>To lose weight, maintain a caloric deficit by eating a balanced diet rich in whole foods and
+                            engaging in regular exercise, including both cardio and strength training. Stay consistent,
+                            hydrated, and ensure adequate sleep.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="review_section">
+            <div class="review">
+                <h1>Member's Review</h1>
+                <div class="review-box-flex">
+                    <div class="review-section">
+                        <div class="reviewer-name">
+                            <img src="Member Image/member_1.jpg" alt="">
+                            <div class="name-star">
+                                <h2>Jane Cooper</h2>
+                                <div class="star">
+                                    <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                                    <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                                    <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                                    <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                                    <span><i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <p>A very good motivated environment to work out .... amazing trainers .... a better place I
+                            have found to make myself fit 😄</p>
+                    </div>
+
+                    <div class="review-section">
+                        <div class="reviewer-name">
+                            <img src="Member Image/member_2.jpg" alt="">
+                            <div class="name-star">
+                                <h2>Evan Rachel</h2>
+                                <div class="star">
+                                    <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                                    <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                                    <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                                    <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                                    <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <p>The gym is very good to build body and I improved by body & I have lost 10kg in 1 month and
+                            support I received!</p>
+                    </div>
+
+                    <div class="review-section">
+                        <div class="reviewer-name">
+                            <img src="Member Image/member_3.jpg" alt="">
+                            <div class="name-star">
+                                <h2>Louis Hoffman</h2>
+                                <div class="star">
+                                    <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                                    <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                                    <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                                    <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                                    <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Very nice place for a workout. A bit pricey on the charges but other than that, it's the
+                            best.Trainer are really good 😊 and facilities also.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about_section">
+            <div class="about">
+                <h1>About Gym</h1>
+                <p>Our gym is dedicated to empowering individuals through fitness, offering state-of-the-art equipment,
+                    expert guidance, and a variety of classes in a supportive, community-driven environment. We focus on
+                    holistic wellness to help you achieve your health and fitness goals.
+                </p>
+                <div class="about_box">
+                    <img src="About Image/about_img_1.jpg" alt="">
+                    <img src="About Image/about_img_2.jpg" alt="">
+                    <img src="About Image/about_img_3.jpg" alt="">
+                    <img src="About Image/about_img_4.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="connect_Section">
+            <div class="connect-section">
+                <div class="connect">
+                    <h1>Connect</h1>
+                    <p>Our gym is a vibrant fitness community committed to helping you connect with your health and
+                        wellness goals. We provide a comprehensive range of state-of-the-art equipment, dynamic classes,
+                        and personalized training programs designed to cater to all fitness levels. Our expert trainers
+                        are dedicated to offering professional guidance and support, ensuring you achieve your desired
+                        results safely and effectively. We pride ourselves on fostering a supportive and motivating
+                        environment where members can connect with like-minded individuals, share their fitness
+                        journeys, and build lasting friendships. Join us to discover a place where your fitness goals
+                        become a reality, and a healthier, happier lifestyle awaits.
+                    </p>
+                    <div class="connect-icon">
+                        <a><i class="fa-brands fa-square-whatsapp fa-beat fa-2xl"></i></a>
+                        <a><i class="fa-brands fa-square-x-twitter fa-beat fa-2xl"></i></i></a>
+                        <a><i class="fa-brands fa-square-instagram fa-beat fa-2xl"></i></a>
+                        <a><i class="fa-brands fa-square-facebook fa-beat fa-2xl"></i></a>
+                        <a><i class="fa-brands fa-square-youtube fa-beat fa-2xl"></i></a>
+                    </div>
+                </div>
+                <div class="timing">
+                    <h1>Gym Hours</h1>
+                    <p>Sun: 6am – 10pm</p>
+                    <p>Mon: 5am – 10pm</p>
+                    <p>Tue: 5am – 10pm</p>
+                    <p>Wed: 5am – 10pm</p>
+                    <p>Thu: 5am – 10pm</p>
+                    <p>Fri: 5am – 10pm</p>
+                    <p>Sat: 6am – 10pm</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="reg_section">
+            <div class="registration-section">
+                <h1>Registration</h1>
+                <div class="register-box">
+                    <form action="">
+                        <div class="form-register">
+                            <label for="name">Name: </label>
+                            <input type="text" name="name" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="form-register">
+                            <label for="email">Email: </label>
+                            <input type="email" name="name" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form-register">
+                            <label for="phone">Phone Number: </label>
+                            <input type="number" name="name" id="phone" placeholder="Enter your phone">
+                        </div>
+                        <div class="form-register">
+                            <label for="phone">Age: </label>
+                            <input type="number" name="name" id="age" placeholder="Enter your age">
+                        </div>
+                        <div class="form-gender">
+                            <label for="gender">Gender: </label>
+                            <input type="radio" name="gender" class="gender">Male
+                            <input type="radio" name="gender" class="gender">Female
+                        </div>
+                        <button class="btn">Register</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact_page_section">
+            <div class="contact_page">
+                <h1>Contact Us</h1>
+                <div class="contact-section">
+                    <div class="get_touch">
+                        <h2>Get in Touch</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Name: </label>
+                                <input type="text" name="name" id="name" placeholder="Enter your name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email: </label>
+                                <input type="email" name="name" id="email" placeholder="Enter your email">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message: </label>
+                                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                            </div>
+                            <button class="contact_btn">Send</button>
+                        </form>
+                    </div>
+
+                    <div class="contact_us">
+                        <h2>Contact Us</h2>
+                        <p>We're here to help you on your fitness journey! Reach out to us via any of the following
+                            methods:</p>
+                        <div>
+                            <div class="contact">
+                                <span class="icon"><i class="fa-solid fa-location-dot" style="color: #070707;"></i></span>
+                                <a style="margin-left: 5px;">Address: Chahata Nagar Lane 4</a>
+                            </div>
+                            <div class="contact">
+                                <span class="icon"><i class="fa-solid fa-phone" style="color: #070707;"></i></span>
+                                <a style="margin-left: 2px;">Phone: +91 9123456780</a>
+                            </div>
+                            <div class="contact">
+                                <span class="icon"><i class="fa-solid fa-paper-plane" style="color: #070707;"></i></span>
+                                <a>Telegram: @fitnesGym_45</a>
+                            </div>
+                        </div>
+                        <div class="socialMedia_logo">
+                            <span><i class="fa-brands fa-instagram logo" style="color: #070707;"></i></span>
+                            <span><i class="fa-brands fa-facebook logo" style="color: #070707;"></i></span>
+                            <span><i class="fa-brands fa-twitter logo" style="color: #070707;"></i></span>
+                            <span><i class="fa-brands fa-whatsapp logo" style="color: #070707;"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        Copyright &copy; FitnessGym.com | All rights reserved
+    </footer>
+</body>
+
+</html>

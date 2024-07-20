@@ -1,0 +1,842 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&family=Playwrite+US+Trad:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap');
+
+
+/* Root Elements */
+:root {
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #131111;
+    z-index: -1;
+}
+
+
+/* Header Section */
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #1a1717;
+    z-index: 1;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+}
+
+.logo img {
+    height: 75px;
+    position: relative;
+    left: 30px;
+}
+
+.show_navbar {
+    display: flex;
+    align-items: center;
+}
+
+.show_navbar li {
+    list-style: none;
+}
+
+.show_navbar li a {
+    text-decoration: none;
+    margin: 0 43px 0 0;
+    padding: 8px 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: color 0.3s;
+}
+
+.show_navbar li a:hover {
+    background-color: #3feb09;
+    color: black;
+}
+
+.navbar .navbar_btn{
+    position: relative;
+    right: 64px;
+    padding: 5px 15px;
+    background: none;
+    outline: none;
+    border: 1px solid rgb(33, 236, 33);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.navbar .navbar_btn:hover{
+    background-color: #21ee46;
+    color: black;
+}
+
+
+
+
+.drop_down_menu{
+    position: absolute;
+    height: 350px;
+    width: 200px;
+    top: 0;
+    right: 0;
+    background-color: #1a1717;
+    display: none;
+}
+
+.hide_navbar{
+    flex-direction: column;
+}
+
+.hide_navbar li{
+    padding: 10px;
+    list-style: none;
+    width: 100%;
+}
+
+.hide_navbar li a{
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    justify-content: center;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.hide_navbar li a:hover {
+    background-color: #3feb09;
+    color: black;
+}
+.toggle_bar_cross{
+    color: white;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.toggle_bar{
+    color: white;
+    font-size: 1.3rem;
+    list-style: none;
+    display: none;
+}
+
+
+
+
+/* Home Section */
+#home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 580px;
+}
+
+.left-container {
+    margin: 50px 0 0 35px;
+}
+
+.left-container h1 {
+    color: white;
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.left-container h2 {
+    color: var(--white);
+    font-size: 3.3rem;
+}
+
+.left-container h5 {
+    color: #21ee46;
+    margin-bottom: 10px;
+}
+
+.left-container h2 span {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px var(--white);
+}
+
+.left-container p {
+    color: white;
+    margin: 5px 0;
+    font-family: cursive;
+}
+
+.left-container .btn {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #26bf26;
+    color: black;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: 1px solid black;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.left-container .btn:hover {
+    background-color: #3cdc39;
+}
+
+.right-container img {
+    width: 500px;
+    margin-right: 20px;
+}
+
+
+/* Program Section */
+#programs {
+    color: white;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.program-headings h1 {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 30px;
+    color: var(--white);
+}
+
+.program-headings h2 {
+    text-align: center;
+    font-family: "Playwrite US Trad", cursive;
+    margin-top: 45px;
+}
+
+.program-headings h1 span {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px var(--white);
+}
+
+.program-box {
+    display: flex;
+    justify-content: center;
+}
+
+.program-box .box1 {
+    margin: 20px;
+    padding: 30px;
+    background-color: #1f1e1e;
+    height: 380px;
+    width: 240px;
+}
+
+.program-box .box1 img {
+    height: 60px;
+    display: block;
+    margin: auto;
+}
+
+.program-box .box1 h3 {
+    text-align: center;
+    margin: 22px 0;
+    font-size: 1.4rem;
+    font-family: "Playwrite NZ", cursive;
+}
+
+.program-box .box1 p {
+    text-align: center;
+    font-family: "Playwrite VN", cursive;
+}
+
+.program-box .box1 .btn {
+    padding: 10px 20px;
+    display: block;
+    margin: 50px auto 0 auto;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.program-box .box1:hover {
+    background-color: #21ee46;
+    color: black;
+}
+
+
+/* Pricing Section */
+/* All section's h1 section */
+.h-pricing,
+.blog h1,
+.contact_page h1,
+.registration-section h1 {
+    color: white;
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 30px 0;
+    /* margin: 30px 0 60px 0; */
+    font-family: "Playwrite NG Modern", cursive;
+}
+
+#price_section {
+    height: 720px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.pricing-box {
+    height: 480px;
+    width: 325px;
+    margin: 10px 25px;
+    background-color: #1f1e1e;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.pricing-box img {
+    height: 60px;
+    display: block;
+    margin: 20px auto;
+}
+
+.pricing-box h3 {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 1.5rem;
+    font-family: "Playwrite NZ", cursive;
+}
+
+hr {
+    margin-bottom: 20px;
+}
+
+.pricing-box p {
+    font-family: "Playwrite VN", cursive;
+}
+
+.pricing-box .price_para {
+    height: 170px;
+}
+
+.pricing-box .tick {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.pricing-box .btn {
+    padding: 10px 20px;
+    display: block;
+    margin: 25px auto;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    border: 1px solid black;
+}
+
+.pricing-box:hover {
+    background-color: #21ee46;
+    color: black;
+}
+
+
+/* Our Plans Section */
+.plans {
+    color: white;
+    height: 500px;
+}
+
+.plans h1 {
+    color: white;
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 50px 0 30px 0;
+    font-family: "Playwrite NG Modern", cursive;
+}
+
+.plan-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+.plan-table table {
+    border-collapse: collapse;
+    width: 70%;
+}
+
+.plan-table th {
+    border-bottom: 1px solid white;
+    padding: 8px;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: "Playwrite VN", cursive;
+}
+
+.plan-table td {
+    border-bottom: 1px solid white;
+    padding: 8px;
+    text-align: center;
+}
+
+
+/* Blog Section */
+.blog {
+    color: white;
+}
+
+.blog_section {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+}
+
+.blog-box {
+    width: 303px;
+    margin: 10px 40px;
+    background-color: #1f1e1e;
+}
+
+.blog-box img {
+    height: 150px;
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+
+.blog-box h3 {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 1.3rem;
+    font-family: "Playwrite NZ", cursive;
+}
+
+.blog-box p {
+    font-family: "Playwrite VN", cursive;
+    height: 200px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+/* Review Section */
+.review {
+    color: white;
+}
+
+.review h1 {
+    color: white;
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 80px 0 30px 0;
+    font-family: "Playwrite NG Modern", cursive;
+}
+
+.review-box-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-section {
+    height: 230px;
+    width: 890px;
+    margin: 5px 0;
+    padding: 20px;
+    background-color: #1f1e1e;
+    border-radius: 10px;
+}
+
+.review-section p {
+    margin-left: 13px;
+    font-size: 14px;
+    font-family: "Playwrite VN", cursive;
+}
+
+.reviewer-name {
+    display: flex;
+    margin: 35px 12px;
+}
+
+.reviewer-name img {
+    height: 65px;
+    max-width: 140px;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+
+.name-star {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name-star h2 {
+    font-size: 1.2rem;
+}
+
+.name-star .star {
+    font-size: 13px;
+}
+
+
+/* About Section */
+.about h1 {
+    color: white;
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 80px 0 30px 0;
+    font-family: "Playwrite NG Modern", cursive;
+}
+
+.about p {
+    color: white;
+    text-align: center;
+    margin: 5px 10px;
+    font-family: "Playwrite VN", cursive;
+}
+
+.about_box {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.about_box::before {
+    content: "";
+    background-color: #21ee46;
+    position: absolute;
+    height: 40%;
+    width: 90%;
+    z-index: -1;
+    margin: 112px;
+}
+
+.about_box img {
+    width: 300px;
+}
+
+
+/* Connect Section */
+.connect-section {
+    color: white;
+    display: flex;
+    position: relative;
+    height: 550px;
+    width: 80%;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.connect-section .connect-icon {
+    margin-top: 145px;
+    text-align: center;
+}
+
+.connect-section .connect-icon a {
+    padding: 5px 20px;
+}
+
+.connect {
+    width: 50%;
+    padding: 20px;
+}
+
+.connect h1,
+.timing h1 {
+    text-align: center;
+    margin: 16px 0 30px 0;
+    font-size: 2.3rem;
+    letter-spacing: 3px;
+    /* font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif; */
+    font-family: "Roboto", sans-serif;
+}
+
+.connect p {
+    text-align: center;
+    font-family: "Playwrite VN", cursive;
+}
+
+.timing {
+    width: 50%;
+    padding: 20px;
+}
+
+.timing p {
+    text-align: center;
+    font-family: "Playwrite VN", cursive;
+    padding: 15px;
+}
+
+
+/* Registration Section */
+.registration-section {
+    position: relative;
+}
+
+#reg_section {
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-box {
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    margin: auto;
+    background-color: #1f1e1e;
+    padding: 40px 10px;
+    border-radius: 10px;
+}
+
+.register-box .form-register {
+    padding: 10px 0;
+    width: 500px;
+}
+
+.register-box .form-register label {
+    width: 100%;
+    display: block;
+    font-size: 1rem;
+    padding: 5px 0;
+    font-family: "Anton", sans-serif;
+    font-weight: bold;
+}
+
+.register-box .form-register input {
+    width: 100%;
+    padding: 3px 0;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid green;
+    color: white;
+}
+
+.register-box .form-gender {
+    width: 100%;
+    padding: 5px 0;
+    color: white;
+}
+
+.form-gender .gender {
+    margin-right: 5px;
+}
+
+.register-box .btn {
+    margin-top: 17px;
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #2cd242;
+}
+
+
+/* Total Contact Section */
+#contact_page_section {
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contact-section {
+    color: white;
+    height: 500px;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: auto;
+    background-color: #1f1e1e;
+    border-radius: 15px;
+}
+
+/* Get in touch section */
+.get_touch {
+    width: 370px;
+    padding: 15px;
+}
+
+.get_touch h2 {
+    text-align: center;
+    margin: 25px;
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.get_touch .form-group {
+    padding: 5px 0;
+}
+
+.get_touch .form-group label {
+    width: 100%;
+    display: block;
+    font-size: 1rem;
+    padding: 5px 0;
+    font-family: "Anton", sans-serif;
+    font-weight: bold;
+}
+
+.get_touch .form-group input {
+    width: 100%;
+    padding: 3px;
+}
+
+.get_touch .form-group textarea {
+    width: 100%;
+    padding: 3px;
+}
+
+.get_touch .contact_btn {
+    padding: 10px 25px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-weight: bold;
+}
+
+/* Contact section */
+.contact_us {
+    width: 315px;
+    padding: 15px;
+    background-color: #37e216;
+    color: black;
+}
+
+.contact_us p {
+    text-align: center;
+    margin-bottom: 46px;
+    font-size: 15px;
+    font-family: "Playwrite VN", cursive;
+}
+
+.contact {
+    margin: 5px;
+    display: flex;
+    font-family: "Anton", sans-serif;
+    font-weight: bold;
+}
+
+.contact a {
+    margin-bottom: 7px;
+    color: red;
+}
+
+.contact_us h2 {
+    text-align: center;
+    margin: 25px;
+    font-size: 2rem;
+    color: black;
+    font-family: "Roboto", sans-serif;
+}
+
+.contact .icon {
+    margin-right: 10px;
+}
+
+.socialMedia_logo {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 45px;
+}
+
+
+/* Footer Section */
+footer {
+    height: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Playwrite VN", cursive;
+}
+
+
+
+
+/* Responsive Design */
+/* @media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar ul li {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    .navbar ul li a {
+        margin: 0;
+    }
+
+    .navbar .navbar_btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+} */
+
+/* @media (max-width: 480px) {
+    .logo img {
+        height: 50px;
+    }
+
+    .navbar {
+        padding: 0 10px;
+    }
+
+    .navbar ul li a {
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+
+    .navbar .navbar_btn {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+} */
+
+/* @media (max-width: 1000px){ */
+    /* .navbar{ */
+        /* display: flex;
+        flex-direction: column;
+        height: 200px;
+        width: 100%; */
+        /* justify-content: center; */
+        /* align-items: center; */
+    /* } */
+/* } */
